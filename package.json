@@ -4,12 +4,14 @@
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
+    "@jotforminc/configs": "0.0.4",
     "@storybook/addon-a11y": "^5.0.5",
     "@storybook/addon-actions": "^5.0.5",
     "@storybook/addon-links": "^5.0.5",
     "@storybook/addons": "^5.0.5",
     "@storybook/react": "^5.0.5",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
@@ -19,7 +21,8 @@
     "lerna": "^3.13.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-test-renderer": "^16.8.5"
+    "react-test-renderer": "^16.8.5",
+    "stylelint": "^9.10.1"
   },
   "name": "uikit",
   "dependencies": {
@@ -28,6 +31,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "eslint": "eslint --ext .js,.jsx packages/"
   }
 }
