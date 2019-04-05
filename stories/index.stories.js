@@ -23,13 +23,29 @@ storiesOf('Button', module)
 
 
 storiesOf('Dropdown', module)
-  .add('with default theme', () => (
+  .add('with single select', () => (
     <Dropdown
       name="test"
       className="omer"
-      // update={this.handleChange}
+      update={action(this)}
       current={[{ value: 'fruit_2', label: 'Orange' }]}
       isMultiple={false}
+    >
+      <DropdownItem value="fruit_1">Apples</DropdownItem>
+      <DropdownItem value="fruit_2">Orange</DropdownItem>
+      <DropdownItem value="fruit_3">Banana</DropdownItem>
+      <DropdownItem value="fruit_4">Grapes</DropdownItem>
+    </Dropdown>
+  ));
+
+storiesOf('Dropdown', module)
+  .add('with multiple select', () => (
+    <Dropdown
+      name="test"
+      className="omer"
+      update={action(this)}
+      current={[{ value: 'fruit_2', label: 'Orange' }]}
+      isMultiple={true}
     >
       <DropdownItem value="fruit_1">Apples</DropdownItem>
       <DropdownItem value="fruit_2">Orange</DropdownItem>

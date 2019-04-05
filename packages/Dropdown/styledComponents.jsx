@@ -23,7 +23,7 @@ export const DdArrow = Styled.div`
   pointer-events: none;
   flex: 0;
 
-  svg {
+  svg, img {
     width: 1.5em;
     display: block;
     fill: #080808;

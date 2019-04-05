@@ -8,15 +8,13 @@ const Button = styled.button`
   border-radius: 3px;
 
   /* Color the border and text with theme.main */
-  color: ${props => props.theme.clean.color};
-  border: 2px solid ${props => props.theme.clean.color};
+  color: ${props => props.theme.main};
+  border: 2px solid ${props => props.theme.main};
 `;
 
 Button.defaultProps = {
   theme: {
-    clean: {
-      color: 'palevioletred'
-    }
+    main: 'palevioletred'
   }
 };
 

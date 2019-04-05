@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import EnhanceWithClickOutside from './enhanceWithClickOutside';
 import DropdownList from './DropdownList';
-import { ReactComponent as DownArrow } from './chevron-down.svg';
+import DownArrow from './chevron-down.svg';
 import {
   Dd,
   DdList,
@@ -148,7 +148,7 @@ class Dropdown extends React.Component {
         <DdLine onClick={this.toggleDropdown}>
           <DdCurrent>{text}</DdCurrent>
           <DdArrow>
-            <DownArrow />
+            <img src={DownArrow} alt="Arrow" />
           </DdArrow>
         </DdLine>
         {isOpen && this.renderList(this.props)}

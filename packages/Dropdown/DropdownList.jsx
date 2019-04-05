@@ -10,7 +10,7 @@ export default class DropdownList extends React.Component {
   constructor(props) {
     super(props);
     this.state = { th: 100 };
-    this.modalRoot = document.getElementById('modal-root');
+    this.modalRoot = document.getElementById('root');
   }
 
   componentDidMount() {
