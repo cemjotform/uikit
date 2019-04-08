@@ -1,11 +1,16 @@
 import Styled from 'styled-components';
 
+const colors = {
+  bg: 'transparent'
+};
+
 export const DdList = Styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   border: 1px solid #ddd;
   border-top: 0;
+  padding: .3em 0;
 `;
 
 export const DdLine = Styled.div`
@@ -14,7 +19,7 @@ export const DdLine = Styled.div`
 `;
 
 export const DdCurrent = Styled.div`
-  padding: 0.5em 1em;
+  padding: 0.5em .75em;
   flex: 1;
 `;
 
@@ -31,7 +36,7 @@ export const DdArrow = Styled.div`
 `;
 
 export const Dd = Styled.div`
-  background-color: #f2f2f2;
+  background-color: ${colors.bg};
   cursor: pointer;
   flex: 1 1 auto;
   line-height: 1.5;
@@ -74,8 +79,8 @@ export const Checkbox = Styled.span`
 `;
 
 export const Item = Styled.div`
-  padding: 0.4em 1em;
-  background-color: #efefef;
+  padding: 0.3em .75em;
+  background-color: ${colors.bg};
   transition: all 0.15s ease;
   cursor: pointer;
   user-select: none;
@@ -88,7 +93,6 @@ export const Item = Styled.div`
 
   ${props => props.isSelected
     && `
-    color: green;
 
     ${Checkbox} {
       border-color: green;

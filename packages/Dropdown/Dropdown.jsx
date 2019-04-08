@@ -137,10 +137,10 @@ class Dropdown extends React.Component {
     }
 
     const { isOpen } = this.state;
-    const { className, name } = this.props;
+    const { className, name, isMultiple } = this.props;
     return (
       <Dd
-        className={`${className} ${isOpen ? 'isOpen' : ''}`}
+        className={`${className} ${isOpen ? 'isOpen' : ''} ${isMultiple ? 'isMultiple' : ''}`}
         ref={c => (this.wrapper = c)}
         isOpen={isOpen}
         name={name}
